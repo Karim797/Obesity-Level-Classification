@@ -4,7 +4,9 @@
 
 Multiclass classification of seven obesity levels using a reproducible preprocessing pipeline, stratified splitting, cross-validation, tuning, baseline comparison, and error analysis. The deployable lifestyle-only track deliberately excludes Height, Weight, and BMI.
 
-![Obesity classification Streamlit application](assets/app-screenshot.jpg)
+![Obesity classification Streamlit demo](assets/app-demo.gif)
+
+[Download the HD MP4 demo](assets/app-demo.mp4)
 
 ## Results
 
@@ -23,7 +25,8 @@ Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Joblib, Streamlit, Jup
 .
 ├── app.py
 ├── classification_project.ipynb
-├── assets/app-screenshot.jpg
+├── assets/app-demo.gif
+├── assets/app-demo.mp4
 ├── requirements.txt
 ├── LICENSE
 └── README.md
