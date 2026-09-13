@@ -13,8 +13,12 @@ The final deployable track deliberately excludes Height, Weight, and BMI to meas
 - Test accuracy: 0.8517
 - Majority-baseline accuracy: 0.1675
 
+## Live app
+
+The app automatically downloads the official UCI dataset and trains the validated lifestyle-only pipeline. A compatible CSV can still be uploaded optionally.
+
 ## Run
 
 Place the CSV in `data/` and run `classification_project.ipynb` from top to bottom.
 
-Run `streamlit run app.py`, then upload the dataset inside the app. The dataset is intentionally not stored in the public repository.
+Run the interactive app locally with `streamlit run app.py`.
