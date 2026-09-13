@@ -1,24 +1,51 @@
 # Obesity Level Classification
 
-**[Open the live Streamlit app](https://karim797-obesity-classification.streamlit.app/)**
+[![Live App](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)](https://karim797-obesity-classification.streamlit.app/)
 
-Multiclass classification of obesity levels with a reproducible preprocessing pipeline, stratified splitting, cross-validation, hyperparameter tuning, baseline comparison, error analysis, and model persistence.
+Multiclass classification of seven obesity levels using a reproducible preprocessing pipeline, stratified splitting, cross-validation, tuning, baseline comparison, and error analysis. The deployable lifestyle-only track deliberately excludes Height, Weight, and BMI.
 
-The final deployable track deliberately excludes Height, Weight, and BMI to measure prediction from lifestyle features. A second track retains them as a reference.
+![Obesity classification Streamlit application](assets/app-screenshot.jpg)
 
-## Latest clean-run result
+## Results
 
 - Selected model: tuned Random Forest
-- Test macro F1: 0.8464
-- Test accuracy: 0.8517
-- Majority-baseline accuracy: 0.1675
+- Test macro F1: **0.8464**
+- Test accuracy: **0.8517**
+- Majority-baseline accuracy: **0.1675**
 
-## Live app
+## Technologies
 
-The app automatically downloads the official UCI dataset and trains the validated lifestyle-only pipeline. A compatible CSV can still be uploaded optionally.
+Python, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Joblib, Streamlit, Jupyter.
 
-## Run
+## Project Structure
 
-Place the CSV in `data/` and run `classification_project.ipynb` from top to bottom.
+```text
+.
+├── app.py
+├── classification_project.ipynb
+├── assets/app-screenshot.jpg
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
 
-Run the interactive app locally with `streamlit run app.py`.
+## How to Run
+
+```bash
+git clone https://github.com/Karim797/Obesity-Level-Classification.git
+cd Obesity-Level-Classification
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The app downloads the official UCI dataset automatically. A compatible CSV upload is optional. Open `classification_project.ipynb` to reproduce the full experiment.
+
+## Responsible Use
+
+This project is an educational machine-learning demonstration. Its predictions are **not medical advice or a clinical diagnosis**.
+
+## License
+
+Released under the [MIT License](LICENSE).

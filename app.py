@@ -14,6 +14,7 @@ from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 st.set_page_config(page_title="Obesity Classification", page_icon="📊")
 st.title("Lifestyle-Based Obesity Classification")
 st.caption("The official UCI dataset loads automatically. You can optionally upload a compatible CSV.")
+st.warning("Educational demonstration only — this prediction is not medical advice or a clinical diagnosis.")
 
 DATASET_URL = (
     "https://archive.ics.uci.edu/static/public/544/"
