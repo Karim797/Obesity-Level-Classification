@@ -1,5 +1,7 @@
 # Obesity Level Classification
 
+**[Open the live Streamlit app](https://karim797-obesity-classification.streamlit.app/)**
+
 Multiclass classification of obesity levels with a reproducible preprocessing pipeline, stratified splitting, cross-validation, hyperparameter tuning, baseline comparison, error analysis, and model persistence.
 
 The final deployable track deliberately excludes Height, Weight, and BMI to measure prediction from lifestyle features. A second track retains them as a reference.
