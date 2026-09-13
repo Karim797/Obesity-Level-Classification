@@ -15,3 +15,4 @@ The final deployable track deliberately excludes Height, Weight, and BMI to meas
 
 Place the CSV in `data/` and run `classification_project.ipynb` from top to bottom.
 
+Run `streamlit run app.py`, then upload the dataset inside the app. The dataset is intentionally not stored in the public repository.
